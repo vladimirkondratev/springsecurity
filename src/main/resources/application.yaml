@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: sa
+    password:
+    url: jdbc:hsqldb:mem:springsecurity
+    initialization-mode: always
+
+  jpa:
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+    hibernate:
+      ddl-auto: none
+
+jwt.header: Authorization
+jwt.secret: kondrvl
+jwt.expiration: 604800
